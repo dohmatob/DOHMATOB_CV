@@ -2,8 +2,16 @@
 \moderncvtheme[blue]{classic}                
 \usepackage[utf8]{inputenc}
 \usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
-\usepackage{hyperref}
 %\usepackage[scale=0.8]{geometry}
+
+%% URls
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  citecolor=gray,
+  urlcolor=green, %couleur des hyperliens
+}
+
 \setlength{\hintscolumnwidth}{3cm}
 \setlength{\makecvtitlenamewidth}{12cm}
 \renewcommand*{\namefont}{\fontsize{24}{29}\mdseries\upshape}
@@ -52,10 +60,11 @@ Implementation of an event-driven pentesting framework for telecom and VoIP-like
 \cvitem{Cryptology}{Number Theory, Elliptic Curves, Smart Cards, Asymmetric Cryptography (RSA), Symmetric
 Cryptography (PKI, DH, DES, AES)}
 \cvitem{Security}{Snort, Wireshark, Nmap, METASPLOIT, OllyDbg, Immunity Debugger, IDA Pro, SPIKE}
+\cvitem{My \emph{github profile}}{\url{https://github.com/dohmatob}}
 
 \section{Scientific Publications (journal and conference papers)}
 \cvitem{PRNI 2014 (\emph{IEEE})}{E. DOHMATOB, A. Gramfort, B. THIRION, G. Varoquaux
-``\emph{Benchmarking solvers for least-squares and logistic regression in brain imaging}''.
+``\emph{Benchmarking solvers for TV-$\ell_{1}$  least-squares and logistic regression in brain imaging}''.
 Pattern Recoginition in Neuroimaging (PRNI), IEEE. \url{http://hal.inria.fr/hal-00991743}}
 \cvitem{MICCAI 2013}{ A. Abraham, E. DOHMATOB, B. THIRION, D. SAMARAS, and G. VAROQUAUX,
 ``\emph{Extracting brain regions from rest fMRI with Total-Variation constrained dictionary learning}''.
@@ -66,11 +75,13 @@ MICCAI - 16th International Conference on Medical Image Computing and Computer A
 \cvitem{Neuro-Imaging}{nipy \url{http://nipy.org}, nilearn \url{http://nilearn.github.io},
   pypreprocess \url{https://github.com/neurospin/pypreprocess}}
 \cvitem{Personal projects}{See complete list on my github profile: \url{https://github.com/dohmatob}}
+\cvitem{My \emph{Open Source Report Card}}{Tentatively, an impartial automatically generated statistical summary of
+my ``contributions heat map'' can be found at \url{http://osrc.dfm.io/dohmatob/}}
 
 \section{Scientific Talks}
 \cvitem{PRNI 2014}{At the PRNI (Pattern Recoginition in Neuroimaging) conference that toke place
 3rd -- June 6th 2014 (Max-Planck Institute for Intelligent Systems, Tuebingen -- Germany) I presented my work,
-\emph{Benchmarking solvers for least-squares and logistic regression in brain imaging}
+\emph{Benchmarking solvers for TV-$\ell_{1}$ least-squares and logistic regression in brain imaging}
 (\url{http://hal.inria.fr/hal-00991743})%% , under the ``Advances in fMRI analysis'' section of the conference
   .}
 
@@ -82,7 +93,8 @@ sprint is summarized here \url{https://github.com/Parietal-INRIA/parietal-python
 to realize the task of implementing a street-viewer for Paris. The underlying problem can formulated as a multi-objective TSP.
 Our algorithm was a Monte-Carlo (random walks on the roadmap of Paris).}
 \cvitem{Brainhack 2013}{The hackathon held 23rd -- 26th October 2013 in Paris. With Alexandre Gramfort,
-I worked on Henson's multimodal (fMRI, EEG/MEG, DTI) faces vs objects dataset.}
+I worked on the preprocessing and statistical analysis (second-level GLM) of Henson's multi-modal
+(fMRI, EEG/MEG, DTI) faces vs objects dataset.}
 
 \section{Languages}
 \cvline{Bilingual}{English (fluent), French (fluent)}
