@@ -1,16 +1,17 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
 \documentclass[11pt,a4paper]{moderncv}
-\moderncvtheme[blue]{classic}                
-\usepackage[utf8]{inputenc}
-\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
-%\usepackage[scale=0.8]{geometry}
-
-%% URls
+% URls
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
   citecolor=gray,
   urlcolor=green, %couleur des hyperliens
 }
+
+\moderncvtheme[blue]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+%\usepackage[scale=0.8]{geometry}
 
 \setlength{\hintscolumnwidth}{3cm}
 \setlength{\makecvtitlenamewidth}{12cm}
@@ -63,13 +64,22 @@ Cryptography (PKI, DH, DES, AES)}
 \cvitem{My \emph{github profile}}{\url{https://github.com/dohmatob}}
 
 \section{Scientific Publications (journal and conference papers)}
-\cvitem{PRNI 2014 (\emph{IEEE})}{E. DOHMATOB, A. Gramfort, B. THIRION, G. Varoquaux
-``\emph{Benchmarking solvers for TV-$\ell_{1}$  least-squares and logistic regression in brain imaging}''.
-Pattern Recoginition in Neuroimaging (PRNI), IEEE. \url{http://hal.inria.fr/hal-00991743}}
-\cvitem{MICCAI 2013}{ A. Abraham, E. DOHMATOB, B. THIRION, D. SAMARAS, and G. VAROQUAUX,
-``\emph{Extracting brain regions from rest fMRI with Total-Variation constrained dictionary learning}''.
-MICCAI - 16th International Conference on Medical Image Computing and Computer Assisted Intervention - 2013 (2013).
-\url{http://hal.inria.fr/hal-00853242}}
+\cvitem{2014}{\begin{itemize}
+  \item{B. Thirion, G. Varoquaux, E. DOHMATOB, J.-B. Poline,
+``\emph{Which fMRI clustering gives good brain parcellations?}''.
+Frontiers in Neuroscience. \url{http://journal.frontiersin.org/Journal/10.3389/fnins.2014.00167/abstract}}
+  \item{E. DOHMATOB, A. Gramfort, B. THIRION, G. Varoquaux
+    ``\emph{Benchmarking solvers for TV-$\ell_{1}$  least-squares and logistic regression in brain imaging}''.
+    Pattern Recoginition in Neuroimaging (PRNI), \emph{IEEE}. \url{http://hal.inria.fr/hal-00991743}}
+\end{itemize}}
+\cvitem{2013}{
+\begin{itemize}
+\item{A. Abraham, E. DOHMATOB, B. THIRION, D. SAMARAS, and G. VAROQUAUX,
+  ``\emph{Extracting brain regions from rest fMRI with Total-Variation constrained dictionary learning}''.
+  MICCAI - 16th International Conference on Medical Image Computing and Computer Assisted Intervention - 2013 (2013).
+  \url{http://hal.inria.fr/hal-00853242}}
+\end{itemize}
+}
 
 \section{Contributions to open-source software projects}
 \cvitem{Neuro-Imaging}{nipy \url{http://nipy.org}, nilearn \url{http://nilearn.github.io},
@@ -81,7 +91,7 @@ my ``contributions heat map'' can be found at \url{http://osrc.dfm.io/dohmatob/}
 \section{Scientific Talks}
 \cvitem{PRNI 2014}{At the PRNI (Pattern Recoginition in Neuroimaging) conference that toke place
 3rd -- June 6th 2014 (Max-Planck Institute for Intelligent Systems, Tuebingen -- Germany) I presented my work,
-\emph{Benchmarking solvers for TV-$\ell_{1}$ least-squares and logistic regression in brain imaging}
+``\emph{Benchmarking solvers for TV-$\ell_{1}$ least-squares and logistic regression in brain imaging}''
 (\url{http://hal.inria.fr/hal-00991743})%% , under the ``Advances in fMRI analysis'' section of the conference
   .}
 
@@ -99,7 +109,12 @@ I worked on the preprocessing and statistical analysis (second-level GLM) of Hen
 \section{Languages}
 \cvline{Bilingual}{English (fluent), French (fluent)}
 
-\section{Scholarships}
+\section{Awards and Scholarships}
+\cvitem{2014}{Honourable Mention (2nd price) awarded to the paper ``\emph{Benchmarking solvers for
+TV-$\ell_{1}$ least-squares and logistic regression in brain imaging}'', by E. DOHMATOB, A. GRAMFORT,
+B. THIRION, G. VAROQUAUX (\url{http://hal.inria.fr/hal-00991743}), presented at the 4th international
+workshop on Pattern Recognition in NeuroImaging (PRNI 2014), Max-Planck Institute for Intelligent Systems,
+Tuebingen -- Germany}
 \cvitem{2009 - 2011}{Erasmus Mundus, University of Bordeaux 1}
 
 \section{Interests}
