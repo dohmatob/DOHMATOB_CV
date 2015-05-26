@@ -1,16 +1,19 @@
-\documentclass[11pt,a4paper,roman]{moderncv}
-\PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
+\documentclass[11pt,a4paper,roman,unicode]{moderncv}
+\PassOptionsToPackage{
+  pdfpagelabels=false,
+  urlcolor=magenta,
+  colorlinks=True,
+  citecolor=gray}{hyperref} 
 
 % fonts
 \usepackage{mathpazo}
-
-% URls
-\usepackage{hyperref}
-\hypersetup{
-  colorlinks=true,
-  citecolor=gray,
-  urlcolor=magenta, %couleur des hyperliens
-}
+%% % URls
+%% \usepackage{hyperref}
+%% \hypersetup{
+%%   colorlinks=true,
+%%   citecolor=gray,
+%%   urlcolor=magenta, %couleur des hyperliens
+%% }
 
 \moderncvtheme[blue]{classic}                
 \usepackage[utf8]{inputenc}
@@ -21,13 +24,15 @@
 \setlength{\makecvtitlenamewidth}{12cm}
 \renewcommand*{\namefont}{\fontsize{24}{29}\mdseries\upshape}
 
-\firstname{DOHMATOB}
-\familyname{Elvis D.}
-\title{PhD Student, Computer Science}              
+\firstname{Elvis}
+\familyname{Dohmatob}
+\title{PhD Student%, Computer Science
+}   
+\email{elvis.dohmatob.inria.fr}                      
+\photo[64pt]{photo}
 \address{Parietal - INRIA, CEA / Neurospin Bât 145}{Point Courrier 156,
 91191 Gif/Yvette, France.}
 %\mobile{<Tel portable>}                    
-\email{elvis.dohmatob.inria.fr}                      
 \homepage{https://team.inria.fr/parietal/elvis/}
 
 \begin{document}
@@ -64,12 +69,12 @@ Implementation of an event-driven pentesting framework for telecom and VoIP-like
 \cvitem{Software Engineering}{OOP, TDD, EDD, version control (git, github), continuous integration (travis), parallel computing}
 \cvitem{Operating Systems}{Linux, Windows (including shell scripting and system programming skills)}
 %% \cvitem{Network Protocols}{TCP/IP, SMB, IPSec, LDAP, SSL, SIP, DNS}
-\cvitem{Cryptology}{Number Theory, Elliptic Curves, Smart Cards, Asymmetric Cryptography (RSA), Symmetric
-Cryptography (PKI, DH, DES, AES)}
-\cvitem{Security tools}{Snort, Wireshark, Nmap, METASPLOIT, OllyDbg, Immunity Debugger, IDA Pro, SPIKE}
-\cvitem{My \emph{github profile}}{\url{https://github.com/dohmatob}}
+%% \cvitem{Cryptology}{Number Theory, Elliptic Curves, Smart Cards, Asymmetric Cryptography (RSA), Symmetric
+%% Cryptography (PKI, DH, DES, AES)}
+%% \cvitem{Security tools}{Snort, Wireshark, Nmap, METASPLOIT, OllyDbg, Immunity Debugger, IDA Pro, SPIKE}
+\cvitem{My github profile}{\url{https://github.com/dohmatob}}
 
-\section{Scientific Publications (journal and conference papers)}
+\section{Scientific Publications (see complete google scholar)}
 \cvitem{2014}{\begin{itemize}
   \item{A. ABRAHAM, E. DOHMATOB, B. THIRION, D. SAMARAS, G. VAROQUAUX,
 ``\emph{Region segmentation for sparse decompositions: better brain parcellations from rest fMRI}''.
@@ -94,9 +99,8 @@ Frontiers in Neuroinformatics. \url{http://journal.frontiersin.org/Journal/10.33
 \cvitem{Neuro-Imaging}{nipy \url{http://nipy.org}, nilearn \url{http://nilearn.github.io},
   pypreprocess \url{https://github.com/neurospin/pypreprocess}}
 \cvitem{Personal projects}{See complete list on my github profile: \url{https://github.com/dohmatob}}
-\cvitem{My \emph{Open Source Report Card}}{Tentatively, an impartial automatically generated statistical summary of
-my ``contributions heat map'' can be found at \url{http://osrc.dfm.io/dohmatob/}}
-
+%% \cvitem{My \emph{Open Source Report Card}}{Tentatively, an impartial automatically generated statistical summary of
+%% my ``contributions heat map'' can be found at \url{http://osrc.dfm.io/dohmatob/}}
 \section{Scientific Talks}
 \cvitem{PRNI 2014}{At the PRNI (Pattern Recoginition in Neuroimaging) conference that took place
 3rd -- 6th June 2014 (Max-Planck Institute for Intelligent Systems, Tuebingen -- Germany), I presented my work,
@@ -116,12 +120,10 @@ feature-screening''}, Stanfod, USA}
 \section{Hackathon Experience}
 %% \cvitem{\llap{Parietal retreat,}\\ 6th -- 8th April 2014}{Virgile FRITSCH and I did VBM (Voxel-Based Morphometry) on a public dataset (Oasis database). The outcome of this
 %% sprint is summarized here \url{https://github.com/Parietal-INRIA/parietal-python/wiki/VBM-dataset-for-nilearn}}
-\cvitem{\llap{Google Hash Code Paris,}\\ 4th -- 5th Apr 2014}{In this competition, I teamed with 2 other members
-to realize the task of implementing a street-viewer for Paris. The underlying problem can formulated as a multi-objective TSP.
-Our algorithm was a Monte-Carlo (random walks on a roadmap of Paris).}
-\cvitem{\llap{Brainhack Paris,}\\ 23rd -- 26th Oct 2013}{With Alexandre Gramfort,
-I worked on the preprocessing and statistical analysis (second-level GLM) of Henson's multi-modal
-(fMRI, EEG/MEG, DTI) faces vs objects dataset.}
+\cvitem{\llap{Google Hash Code Paris, }\\ 2014}{Implementation of
+  street-viewer for Paris. Problem can be modelled as a TSP.}
+\cvitem{\llap{Brainhack Paris,}\\ 23rd -- 26th Oct 2013}{Group
+  analysis on Henson's multi-modal faces vs objects dataset.}
 
 \section{Languages}
 \cvline{Bilingual}{English (fluent), French (fluent)}
@@ -132,7 +134,7 @@ TV-$\ell_{1}$ least-squares and logistic regression in brain imaging}'', by E. D
 B. THIRION, G. VAROQUAUX (\url{http://hal.inria.fr/hal-00991743}), presented at the 4th international
 workshop on Pattern Recognition in NeuroImaging (PRNI 2014), Max-Planck Institute for Intelligent Systems,
 Tuebingen -- Germany}
-\cvitem{2009 - 2011}{Erasmus Mundus, University of Bordeaux 1}
+\cvitem{2009 - 2011}{Erasmus Mundus, ALGANT, University of Bordeaux 1}
 
 \section{Interests}
 \cvline{Research}{convex optimization, nonlinear registration, machine
